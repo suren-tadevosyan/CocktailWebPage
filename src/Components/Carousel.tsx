@@ -9,11 +9,11 @@ import { ISampleData } from "@/Constants/MockData";
 import leftArrowIMG from "../../public/left-arrow.png";
 import rightArrowIMG from "../../public/right-arrow.png";
 
-interface EmblaCarouselProps {
+interface IEmblaCarouselProps {
   data: ISampleData[];
 }
 
-const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ data }) => {
+const EmblaCarousel: React.FC<IEmblaCarouselProps> = ({ data }) => {
   const options: EmblaOptionsType = {
     loop: true,
     align: "center",

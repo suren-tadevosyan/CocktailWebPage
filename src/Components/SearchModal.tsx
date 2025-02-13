@@ -2,12 +2,12 @@
 
 import React, { useEffect, useRef } from "react";
 
-interface SearchModalProps {
+interface ISearchModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
+const SearchModal: React.FC<ISearchModalProps> = ({ isOpen, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

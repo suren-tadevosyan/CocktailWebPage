@@ -1,9 +1,9 @@
-export interface MenuItem {
+export interface IMenuItem {
     label: string;
     href: string;
   }
   
-  export const NAV_MENU: MenuItem[] = [
+  export const NAV_MENU: IMenuItem[] = [
     { label: "Home", href: "#" },
     { label: "Products", href: "#" },
     { label: "Cocktails", href: "#" },

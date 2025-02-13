@@ -1,7 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-interface ButtonProps {
+interface IButtonProps {
   text?: string;
   icon?: StaticImageData;
   className: string;
@@ -9,7 +9,7 @@ interface ButtonProps {
   style?: React.CSSProperties;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<IButtonProps> = ({
   text,
   icon,
   className,

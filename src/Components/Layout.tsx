@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 
-interface LayoutProps {
+interface ILayoutProps {
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen">
       <Navbar />

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Button from "./Button";
-import { NAV_MENU, MenuItem } from "@/Constants/MenuItem";
+import { NAV_MENU, IMenuItem } from "@/Constants/MenuItem";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Logo from "./Logo";
 
@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <>
       <nav className=" flex justify-between items-center px-6 py-4 bg-white shadow-md fixed top-0 z-[999] w-full">
         <div className="flex-1 hidden md:flex space-x-6">
-          {NAV_MENU.map((item: MenuItem, index: number) => (
+          {NAV_MENU.map((item: IMenuItem, index: number) => (
             <a
               key={index}
               href={item.href}
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
 
         {isOpen && (
           <div className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden flex flex-col items-center space-y-4 py-4">
-            {NAV_MENU.map((item: MenuItem, index: number) => (
+            {NAV_MENU.map((item: IMenuItem, index: number) => (
               <a
                 key={index}
                 href={item.href}
