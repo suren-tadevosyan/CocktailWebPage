@@ -82,16 +82,14 @@ const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ data }) => {
 
       <Button
         icon={leftArrowIMG}
-        style={{ padding: "20px" }}
-        className="absolute top-1/2 left-16 md:left-1/4 transform -translate-y-1/2 text-white rounded-full border border-black 
+        className="absolute top-1/2  p-[10px]  md:p-[20px]  left-8 md:left-1/4 transform -translate-y-1/2 text-white rounded-full border border-black 
              transition duration-300 hover:bg-gray-200 hover:scale-110 hover:border-gray-600"
         onClick={scrollPrev}
       />
 
       <Button
         icon={rightArrowIMG}
-        style={{ padding: "20px" }}
-        className="absolute top-1/2 right-16 md:right-1/4 transform -translate-y-1/2  text-white  rounded-full border border-black  transition duration-300 hover:bg-gray-200 hover:scale-110 hover:border-gray-600"
+        className="absolute top-1/2 p-[10px]  md:p-[20px] right-8 md:right-1/4 transform -translate-y-1/2  text-white  rounded-full border border-black  transition duration-300 hover:bg-gray-200 hover:scale-110 hover:border-gray-600"
         onClick={scrollNext}
       />
     </div>
